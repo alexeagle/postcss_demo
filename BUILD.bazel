@@ -1,0 +1,8 @@
+load("@npm//postcss-cli:index.bzl", "postcss")
+
+postcss(
+    name = "postcss",
+    data = ["my.css"],
+    args = ["--use", "autoprefixer", "-o", "$(location my.post.css)", "$(location my.css)"],
+    outs = ["my.post.css"],
+)

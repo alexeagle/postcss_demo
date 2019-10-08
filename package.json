@@ -1,0 +1,19 @@
+{
+    "name": "postcss_demo",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@bazel/bazel": "latest",
+        "@bazel/buildifier": "latest",
+        "@bazel/ibazel": "latest"
+    },
+    "scripts": {
+        "build": "bazel build //...",
+        "test": "bazel test //..."
+    },
+    "dependencies": {
+        "autoprefixer": "^9.6.4",
+        "postcss": "^7.0.18",
+        "postcss-cli": "^6.1.3"
+    }
+}
